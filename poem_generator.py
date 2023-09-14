@@ -14,8 +14,8 @@ from transformers import BertTokenizer, GPT2LMHeadModel, TextGenerationPipeline
 tokenizer = BertTokenizer.from_pretrained("uer/gpt2-chinese-cluecorpussmall")
 # model = GPT2LMHeadModel.from_pretrained("uer/gpt2-chinese-cluecorpussmall")
 # 两个训练好的模型
-model1 = torch.load('models/ckpt_epoch_1.model').to('cpu')
-model2 = torch.load('models/ckpt_epoch_9.model').to('cpu')
+model1 = torch.load('models/model1.model').to('cpu')
+model2 = torch.load('models/model2.model').to('cpu')
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
